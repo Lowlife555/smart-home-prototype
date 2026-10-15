@@ -25,7 +25,7 @@ media/demo.mp4   demo video of the prototype running
 
 - **Board:** NUCLEO-STM32L476RG, running **mbed OS 6** (uses `DigitalOut`, `AnalogIn`, `I2C`, `BufferedSerial`, `ThisThread::sleep_for`).
 - **Sensors and actuators:** ADXL335 3-axis analog accelerometer, DS1621 digital temperature sensor (I²C, `0x9E`), LDR light sensor, potentiometer, 4 LEDs, RGB status LED, 4 DIP switches, push button.
-- **Calibration:** the LDR threshold and the accelerometer zero offset were calibrated experimentally per board (the 1.65 V / 330 mV/g constants above come from that calibration).
+- **Calibration:** the accelerometer constants (1.65 V mid-supply, 330 mV/g) are the ADXL335's nominal sensitivity; the LDR thresholds were measured on this board and are recorded in the code comment (`0.03` at full light, `0.31` in the dark).
 - **Build:** create an mbed OS 6 project (mbed CLI / Keil Studio) and use `src/full.cpp` as `main.cpp`.
 
 ## Notes and limitations
@@ -63,7 +63,7 @@ media/demo.mp4   原型运行的演示视频
 
 - **开发板**：NUCLEO-STM32L476RG，运行 **mbed OS 6**（使用 `DigitalOut`、`AnalogIn`、`I2C`、`BufferedSerial`、`ThisThread::sleep_for`）。
 - **传感器与执行器**：ADXL335 三轴模拟加速度计、DS1621 数字温度传感器（I²C，`0x9E`）、LDR 光敏电阻、电位器、4 个 LED、RGB 状态灯、4 个拨动开关、按键。
-- **标定**：LDR 阈值与加速度计零偏均为逐板实验标定（上述 1.65 V / 330 mV/g 常数即来自标定结果）。
+- **标定**：加速度计常数（中点 1.65 V、330 mV/g）是 ADXL335 的标称灵敏度；LDR 阈值是在本板上实测得到的，记录在代码注释里（最强光 `0.03`、最暗 `0.31`）。
 - **编译**：新建 mbed OS 6 工程（mbed CLI / Keil Studio），把 `src/full.cpp` 作为 `main.cpp` 使用。
 
 ## 说明与限制
