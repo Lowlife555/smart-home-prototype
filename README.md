@@ -1,5 +1,7 @@
 # Smart Home System Prototype — Fall Detection, Intelligent Lighting and Automatic Heating Control
 
+- **Coursework report**: [`docs/EL1242-Report.pdf`](docs/EL1242-Report.pdf) — 13 pages, the submitted EL1242 report (student identifiers redacted)
+
 An **mbed OS 6** firmware prototype of an elderly-assistance smart-home controller on a **NUCLEO-STM32L476RG**.
 Year-1 individual coursework (EL1242 – Digital Electronics): all hardware, firmware, calibration, testing and the demonstration video were done by a single author.
 
@@ -35,6 +37,8 @@ media/demo.mp4   demo video of the prototype running
 - The serial console runs at 9600 baud; most debug prints are commented out in the committed version.
 
 ---
+
+- **课程报告**：[`docs/EL1242-Report.pdf`](docs/EL1242-Report.pdf) —— 提交版 EL1242 报告，13 页（已脱敏个人信息）
 
 # 智能家居系统原型 —— 跌倒检测、智能照明与自动加热控制
 
